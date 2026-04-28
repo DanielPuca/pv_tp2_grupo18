@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+
+    <h1>Ejercicio 18 - Calcular número mayor</h1>
+
+    <script>
+        const calcularMayor = (numero1, numero2) => {
+            if (numero1 > numero2) {
+                document.write(`<p>El número mayor es: ${numero1}</p>`);
+            } else if (numero2 > numero1) {
+                document.write(`<p>El número mayor es: ${numero2}</p>`);
+            } else {
+                document.write(`<p>Los números son iguales.</p>`);
+            }
+        };
+
+        const numero1 = parseInt(prompt("Ingrese el primer número:"));
+        const numero2 = parseInt(prompt("Ingrese el segundo número:"));
+
+        document.write(`<p>Primer número ingresado: ${numero1}</p>`);
+        document.write(`<p>Segundo número ingresado: ${numero2}</p>`);
+
+        calcularMayor(numero1, numero2);
+    </script>
+
+</body>
+</html>
