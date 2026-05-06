@@ -1,0 +1,41 @@
+:root{
+    --color-principal:#f4f6f8;
+    --color-secundario:#ffffff;
+    --color-titulo: #83201f;
+    --color-resultado: #e2866a;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: var(--color-secundario);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: var(--color-titulo);
+}
+
+.selectores {
+    margin: 10px 0;
+    padding: 15px;
+}
+
+select{
+    padding: 15px;
+}
+
+#resultado {
+    padding: 5px;
+    background-color: var(--color-resultado);
+    font-weight: bold;
+}
